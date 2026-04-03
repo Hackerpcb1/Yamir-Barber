@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yamir Barber - Barbería Profesional</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+          
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="#" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <span class="logo-text">Yamir Barber</span>
+                </a>
+                <nav class="nav" id="nav">
+                    <a href="#inicio" class="nav-link active">Inicio</a>
+                    <a href="#servicios" class="nav-link">Servicios</a>
+                    <!-- <a href="#galeria" class="nav-link">Galería</a> -->
+                    <a href="#equipo" class="nav-link">Equipo</a>
+                    <a href="#testimonios" class="nav-link">Testimonios</a>
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                    <button class="btn btn-primary" onclick="openModal()">
+                        <i class="fas fa-calendar-alt"></i>
+                        Reservar Cita
+                    </button>
+                </nav>
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+               
+                <h1>Donde el Estilo <span>Encuentra</span> su Identidad</h1>
+                <p>Experimenta el arte de la barbería tradicional con un toque moderno. Nuestros maestros barberos transforman tu look con precisión y pasión.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="openModal()">
+                        <i class="fas fa-calendar-check"></i>
+                        Reservar Ahora
+                    </button>
+                    <a href="#servicios" class="btn btn-white">
+                        <i class="fas fa-scissors"></i>
+                        Ver Servicios
+                    </a>
+                </div>
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <div class="hero-feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>Horario</h4>
+                        <p>Lun-Vie 1pm-7pm</p>
+                    </div>
+                    <div class="hero-feature">
+                        <div class="hero-feature-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h4>Servicio</h4>
+                        <p>A Domicilio</p>
+                    </div>
+                    <div class="hero-feature">
+                        <div class="hero-feature-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Garantía</h4>
+                        <p>100% Satisfacción</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="servicios">
+        <div class="container">
+            <div class="section-title">
+                <span class="subtitle">Nuestros Servicios</span>
+                <h2>Corte & Estilo Profesional</h2>
+                <p>Ofrecemos una amplia gama de servicios de barbería para satisfacer todas tus necesidades de estilo</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Corte, Barba y Cejas</h3>
+                    <p>Corte completo con arreglo de barba y cejas</p>
+                    <div class="service-price">$25 <span>/ sesión</span></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Corte y Cejas</h3>
+                    <p>Corte de cabello con arreglo de cejas</p>
+                    <div class="service-price">$15 <span>/ sesión</span></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-scissors"></i>
+                    </div>
+                    <h3>Corte y Barba</h3>
+                    <p>Corte de cabello con arreglo de barba</p>
+                    <div class="service-price">$15 <span>/ sesión</span></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Corte de Cabello</h3>
+                    <p>Corte personalizado según la forma de tu rostro</p>
+                    <div class="service-price">$10 <span>/ sesión</span></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Cejas</h3>
+                    <p>Arreglo y diseño de cejas profesional</p>
+                    <div class="service-price">$5 <span>/ sesión</span></div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wine-glass"></i>
+                    </div>
+                    <h3>Barba</h3>
+                    <p>Arreglo y diseño de barba con navaja caliente</p>
+                    <div class="service-price">$5 <span>/ sesión</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section
+    <section class="section gallery" id="galeria">
+        <div class="container">
+            <div class="section-title">
+                <span class="subtitle">Nuestra Galería</span>
+                <h2>Trabajos Recientes</h2>
+                <p>Descubre algunos de nuestros mejores trabajos y inspírate para tu próximo estilo</p>
+            </div>
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="cortes">Cortes</button>
+                <button class="filter-btn" data-filter="barbas">Barbas</button>
+                <button class="filter-btn" data-filter="estilos">Estilos</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="cortes">
+                    <img src="https://images.unsplash.com/photo-1503951914875-452162b3d3be?w=600" alt="Corte de cabello moderno">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Corte Fade</h4>
+                            <p>Estilo moderno</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="barbas">
+                    <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=600" alt="Arreglo de barba">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Barba Estilizada</h4>
+                            <p>Diseño profesional</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cortes">
+                    <img src="https://images.unsplash.com/photo-1529669458559-12f2a4563aec?w=600" alt="Corte clásico">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Corte Clásico</h4>
+                            <p>Atemporal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="estilos">
+                    <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=600" alt="Peinado profesional">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Peinado Elegante</h4>
+                            <p>Para ocasiones especiales</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cortes">
+                    <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=600" alt="Corte undercut">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Undercut</h4>
+                            <p>Estilo audaz</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="barbas">
+                    <img src="https://images.unsplash.com/photo-1552072092-7f9b8d63efcb?w=600" alt="Barba completa">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Barba Completa</h4>
+                            <p>Look masculino</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="estilos">
+                    <img src="https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?w=600" alt="Estilo vintage">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Estilo Vintage</h4>
+                            <p>Clásico retro</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="cortes">
+                    <img src="https://images.unsplash.com/photo-1616098784882-92d0fc1f1f8f?w=600" alt="Corte con diseño">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Corte con Diseño</h4>
+                            <p>Personalizado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Team Section -->
+    <section class="section team" id="equipo">
+        <div class="container">
+            <div class="section-title">
+                <span class="subtitle">Nuestro Equipo</span>
+                <h2>Conoce a los Maestros</h2>
+                <p>Profesionales altamente capacitados con años de experiencia en el arte de la barbería</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400" alt="Yamir Berrios">
+                        <div class="team-social">
+                            <a href="https://www.instagram.com/yamir.barber?igsh=MWNiZHZoZmN4eDkxNg==" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Yamir Berrios</h3>
+                        <p>Master Barber</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimonios">
+        <div class="container">
+            <div class="section-title">
+                <span class="subtitle">Testimonios</span>
+                <h2>Qué Dicen Nuestros Clientes</h2>
+                <p>La satisfacción de nuestros clientes es nuestra mayor recompensa</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-item active">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Excelente servicio desde que entras te sientes en un lugar premium. El corte quedó perfecto y el ambiente es increíble. ¡Recomendado al 100%!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1599566150163-29194dcabd36?w=100" alt="Cliente" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4>Anibal Fernandez</h4>
+                            <p>Cliente Frecuente</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"El mejor barber de la ciudad. Llevo años viniendo y siempre quedo satisfecho. El arreglo de barba es sublime y el ambiente muy profesional."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100" alt="Cliente" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4>Roberto Vazquez</h4>
+                            <p>Cliente Frecuente</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Primera vez que vengo y quedé fascinado. El equipo es muy profesional y los precios son justos por la calidad que ofrecen. ¡Volveré seguro!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100" alt="Cliente" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4>Abdiel Lugos</h4>
+                            <p>Nuevo Cliente</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials-dots">
+                <span class="testimonial-dot active" data-index="0"></span>
+                <span class="testimonial-dot" data-index="1"></span>
+                <span class="testimonial-dot" data-index="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="section booking" id="reservar">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-form">
+                    <h3>Reserva Tu Cita</h3>
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <label for="bookingName">Nombre Completo</label>
+                            <input type="text" id="bookingName" name="name" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookingPhone">Teléfono</label>
+                            <input type="tel" id="bookingPhone" name="phone" placeholder="Tu número de teléfono" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="bookingService">Servicio</label>
+                                <select id="bookingService" name="service" required>
+                                    <option value="">Seleccionar servicio</option>
+                                    <option value="corte-barba-cejas">Corte, Barba y Cejas - $25</option>
+                                    <option value="corte-cejas">Corte y Cejas - $15</option>
+                                    <option value="corte-barba">Corte y Barba - $15</option>
+                                    <option value="corte">Corte de Cabello - $10</option>
+                                    <option value="cejas">Cejas - $5</option>
+                                    <option value="barba">Barba - $5</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="bookingDate">Fecha</label>
+                                <input type="date" id="bookingDate" name="date" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookingNotes">Notas Adicionales</label>
+                            <textarea id="bookingNotes" name="notes" rows="3" placeholder="¿Alguna preferencia especial?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-check-circle"></i>
+                            Confirmar Reserva
+                        </button>
+                    </form>
+                </div>
+                <div class="booking-contact">
+                    <div style="background: var(--color-white); padding: 40px; border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); text-align: center; height: 100%; display: flex; flex-direction: column; justify-content: center;">
+                        <div style="margin-bottom: 30px;">
+                            <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--color-accent), #b8944f); border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 20px; box-shadow: 0 8px 20px rgba(201, 169, 98, 0.3);">
+                                <i class="fas fa-truck" style="font-size: 2rem; color: white;"></i>
+                            </div>
+                            <h3 style="font-size: 1.4rem; margin-bottom: 10px; color: var(--color-primary);">Servicio a Domicilio</h3>
+                            <p style="color: var(--color-text-light); font-size: 0.95rem;">Te llevamos el servicio a la puerta de tu casa</p>
+                        </div>
+                        <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-bottom: 30px; padding: 20px 0; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+                            <div style="text-align: center;">
+                                <i class="fas fa-phone-alt" style="color: var(--color-accent); font-size: 1.3rem; margin-bottom: 8px; display: block;"></i>
+                                <p style="font-weight: 600; font-size: 1rem; color: var(--color-primary);">(787) 483-3009</p>
+                            </div>
+                            <div style="text-align: center;">
+                                <i class="fas fa-clock" style="color: var(--color-accent); font-size: 1.3rem; margin-bottom: 8px; display: block;"></i>
+                                <p style="font-weight: 600; font-size: 1rem; color: var(--color-primary);">Lun - Vie</p>
+                                <p style="font-size: 0.8rem; color: var(--color-text-light);">1:00 PM - 7:00 PM</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content: center; gap: 15px;">
+                            <a href="https://www.instagram.com/yamir.barber?igsh=MWNiZHZoZmN4eDkxNg==" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/17874833009" class="social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <span class="logo-text">Yamir</span>
+                    </a>
+                    <p>Barbería profesional a domicilio. Traemos el estilo y la tradición directamente a la puerta de tu casa.</p>
+                    <div class="contact-social">
+                        <a href="https://www.instagram.com/yamir.barber?igsh=MWNiZHZoZmN4eDkxNg==" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/17874833009"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Yamir Barber. Todos los derechos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos y Condiciones</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Reservar Cita</h3>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <form id="modalBookingForm">
+                <div class="form-group">
+                    <label for="modalName">Nombre Completo</label>
+                    <input type="text" id="modalName" name="name" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="modalPhone">Teléfono</label>
+                        <input type="tel" id="modalPhone" name="phone" placeholder="Tu teléfono" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modalDate">Fecha</label>
+                        <input type="date" id="modalDate" name="date" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="modalService">Servicio</label>
+                    <select id="modalService" name="service" required>
+                        <option value="">Seleccionar servicio</option>
+                        <option value="corte-barba-cejas">Corte, Barba y Cejas - $25</option>
+                        <option value="corte-cejas">Corte y Cejas - $15</option>
+                        <option value="corte-barba">Corte y Barba - $15</option>
+                        <option value="corte">Corte de Cabello - $10</option>
+                        <option value="cejas">Cejas - $5</option>
+                        <option value="barba">Barba - $5</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; margin-top: 10px;">
+                    <i class="fas fa-check"></i>
+                    Confirmar Reserva
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div class="notification" id="notification">
+        <div class="notification-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="notification-content">
+            <h4 id="notificationTitle">¡Éxito!</h4>
+            <p id="notificationMessage">Tu mensaje ha sido enviado</p>
+        </div>
+    </div>
+
+    <!-- Scroll Top -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/17874833009" class="floating-whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // ========== HEADER SCROLL ==========
+        const header = document.getElementById('header');
+        const scrollTop = document.getElementById('scrollTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+                scrollTop.classList.add('visible');
+            } else {
+                header.classList.remove('scrolled');
+                scrollTop.classList.remove('visible');
+            }
+        });
+
+        // ========== MOBILE MENU ==========
+        const menuToggle = document.getElementById('menuToggle');
+        const nav = document.getElementById('nav');
+
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+
+        // ========== SCROLL TO TOP ==========
+        scrollTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ========== ACTIVE NAV LINK ON SCROLL ==========
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // ========== GALLERY FILTER ==========
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.dataset.filter;
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.dataset.category === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // ========== TESTIMONIALS SLIDER ==========
+        const testimonialItems = document.querySelectorAll('.testimonial-item');
+        const testimonialDots = document.querySelectorAll('.testimonial-dot');
+        let currentTestimonial = 0;
+
+        function showTestimonial(index) {
+            testimonialItems.forEach(item => item.classList.remove('active'));
+            testimonialDots.forEach(dot => dot.classList.remove('active'));
+            
+            testimonialItems[index].classList.add('active');
+            testimonialDots[index].classList.add('active');
+            currentTestimonial = index;
+        }
+
+        testimonialDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => showTestimonial(index));
+        });
+
+        // Auto-rotate testimonials
+        setInterval(() => {
+            currentTestimonial = (currentTestimonial + 1) % testimonialItems.length;
+            showTestimonial(currentTestimonial);
+        }, 5000);
+
+        // ========== MODAL ==========
+        const modal = document.getElementById('bookingModal');
+
+        function openModal() {
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('active')) {
+                closeModal();
+            }
+        });
+
+        // ========== NOTIFICATION ==========
+        function showNotification(title, message, type = 'success') {
+            const notification = document.getElementById('notification');
+            const notificationTitle = document.getElementById('notificationTitle');
+            const notificationMessage = document.getElementById('notificationMessage');
+            const notificationIcon = notification.querySelector('.notification-icon');
+
+            notificationTitle.textContent = title;
+            notificationMessage.textContent = message;
+            notification.className = 'notification show ' + type;
+
+            if (type === 'success') {
+                notificationIcon.innerHTML = '<i class="fas fa-check-circle"></i>';
+            } else {
+                notificationIcon.innerHTML = '<i class="fas fa-exclamation-circle"></i>';
+            }
+
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 4000);
+        }
+
+        // ========== BOOKING FORM ==========
+        const bookingForm = document.getElementById('bookingForm');
+        const modalBookingForm = document.getElementById('modalBookingForm');
+
+        bookingForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('bookingName').value;
+            const service = document.getElementById('bookingService').value;
+            const date = document.getElementById('bookingDate').value;
+
+            // Simulate form submission
+            showNotification('¡Cita Reservada!', `Gracias ${name}. Tu cita para ${service} el ${date} ha sido confirmada.`, 'success');
+            bookingForm.reset();
+        });
+
+        modalBookingForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const name = document.getElementById('modalName').value;
+            const service = document.getElementById('modalService').value;
+            const date = document.getElementById('modalDate').value;
+
+            showNotification('¡Cita Reservada!', `Gracias ${name}. Tu cita para ${service} el ${date} ha sido confirmada.`, 'success');
+            modalBookingForm.reset();
+            closeModal();
+        });
+
+        // ========== NEWSLETTER FORM ==========
+        const newsletterForm = document.getElementById('newsletterForm');
+        newsletterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = newsletterForm.querySelector('input').value;
+            showNotification('¡Suscripción Exitosa!', `Te has suscrito con ${email}`, 'success');
+            newsletterForm.reset();
+        });
+
+        // ========== MIN DATE FOR BOOKING ==========
+        const dateInputs = [document.getElementById('bookingDate'), document.getElementById('modalDate')];
+        const today = new Date().toISOString().split('T')[0];
+        dateInputs.forEach(input => {
+            if (input) {
+                input.setAttribute('min', today);
+            }
+        });
+
+        // ========== SMOOTH SCROLL FOR ANCHOR LINKS ==========
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // ========== GALLERY LIGHTBOX (Simple) ==========
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const img = item.querySelector('img');
+                const src = img.src;
+                // In a real implementation, you would create a lightbox modal here
+                // For now, we'll just show a notification
+                showNotification('Galería', 'Haz clic en las imágenes para verlas en grande (funcionalidad completa en desarrollo)', 'success');
+            });
+        });
+    </script>
+</body>
+</html>
